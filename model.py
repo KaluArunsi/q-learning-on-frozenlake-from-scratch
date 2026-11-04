@@ -38,8 +38,13 @@ def greedy_action(q_table, state):
 
     return action
 
-# Step 4 - sample_random_action (not yet solved)
-# TODO: implement
+# Step 4 - sample_random_action
+def sample_random_action(action_space):
+    # TODO: draw a uniformly random action from the given Gymnasium action space
+    action = action_space.sample()
+    action = int(action)
+
+    return action
 
 # Step 5 - should_explore (not yet solved)
 # TODO: implement
