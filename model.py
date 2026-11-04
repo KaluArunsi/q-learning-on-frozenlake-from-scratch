@@ -46,8 +46,15 @@ def sample_random_action(action_space):
 
     return action
 
-# Step 5 - should_explore (not yet solved)
-# TODO: implement
+# Step 5 - should_explore
+import numpy as np
+
+def should_explore(epsilon, rng):
+    """Return True with probability epsilon using the provided numpy Generator."""
+    # TODO: draw a uniform sample from rng and compare it to epsilon
+    if rng.random() < epsilon:
+        return True
+    return False
 
 # Step 6 - epsilon_greedy_action (not yet solved)
 # TODO: implement
